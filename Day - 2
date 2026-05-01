@@ -39,3 +39,26 @@ int main(){
     cout<< max_number;
     return 0;
 }
+
+//Problem 5 -- Continue Statement
+//Print 1 to N and avoid these number which divisible by 3
+
+#include<iostream>
+using namespace std;
+
+//Problem 5 -- Continue statement
+//Print 1 to N and avoid these number which are divisible by3
+
+int main(){
+    int n;
+    cin>> n;
+    
+    for(int i=0;i<=n;i++){
+        if(i % 3 == 0){
+            continue;
+        }
+        cout<< i<<" ";
+    }
+    cout<< "/n";
+    return 0;
+}
