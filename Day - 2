@@ -1,1 +1,23 @@
-
+//problem 2 -- If -else condition
+//to verify user's age whther eligible for vote or not ?
+#include<iostream>
+using namespace std;
+int main(){
+    int age;
+    cin>> age;
+    
+    if(age>=18){
+        if(age>=100){
+            cout<<"Eligible for vote(But we are super senior citizen";
+        }else{
+            cout<<"Eligible for vote";
+        }
+    }else{
+        if(age<0){
+            cout<<"Enter a valid age number";
+        }else{
+            cout<<"Not eligible for vote";
+        }
+    }
+    return 0;
+}
