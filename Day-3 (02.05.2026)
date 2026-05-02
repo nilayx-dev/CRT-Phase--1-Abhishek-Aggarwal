@@ -154,3 +154,21 @@ int main(){
     }
     return 0;
 }
+
+
+/Problem 10 --
+//Smartphone unlock until we get a correct password
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int password;
+    do{
+        cout<< "Enter the password...";
+        cin>> password;
+    }while(password != 1234);{
+        cout<<"Phone unlocked";
+    }
+    return 0;
+}
