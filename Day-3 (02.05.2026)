@@ -52,3 +52,34 @@ int main(){
     }
     return 0;
 }
+
+//Problem 5 --
+//Print 1 to 10 using do while loop
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int i=1;
+    do{
+        cout<< i <<"\n";
+        i++;
+    }while(i<=10);
+    return 0;
+}
+
+
+//Problem 6 --
+//Print 10 to 1 using do while loop
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int i=10;
+    do{
+        cout<< i <<"\n";
+        i--;
+    }while(i>=1);
+    return 0;
+}
