@@ -11,3 +11,21 @@ int main(){
     PrintMessage();
     return 0;
 }
+
+//Problem 2--
+//Making a functions with arugument and no return type
+
+#include<iostream>
+using namespace std;
+
+int area(int a,int b){
+    return a*b;
+}
+
+int main(){
+    int length =10;
+    int width = 5;
+    int areaofRectangle = area(length,width);
+    
+    cout<<areaofRectangle;
+}
