@@ -57,3 +57,31 @@ int main(){
     SendText("BJP wons...");
     return 0;
 }
+
+//3.3 No argument.Return type
+
+#include<iostream>
+using namespace std;
+
+int ticketNumber(){
+    return 101;
+}
+
+int main(){
+    cout<<ticketNumber();
+    return 0;
+}
+
+//3.4 argument.return type
+
+#include<iostream>
+using namespace std;
+
+int currencyConversion(int amountInUSD){
+    return amountInUSD/100;
+}
+
+int main(){
+    cout<< currencyConversion(100);
+    return 0;
+}
