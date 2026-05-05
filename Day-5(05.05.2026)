@@ -112,3 +112,22 @@ int main(){
     return 0;
 }
 
+//Problem 5 --
+//Pointers
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int age = 100;
+    int *ptr = &age;
+    
+    cout<<age<<"\n";
+    cout<<ptr<<"\n";
+    cout<<*ptr<<"\n";
+    
+    //age=87
+    *ptr=87;
+    cout<<*ptr;
+}
+
