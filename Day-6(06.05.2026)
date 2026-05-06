@@ -36,3 +36,27 @@ int main(){
     cout<<area(10,3);
 }
 
+//Problem 3 --
+//Call by value--Photocopy 
+// Call by reference--Original copy(address)
+
+#include<iostream>
+using namespace std;
+
+void updatebyValue(int a){
+    a=500;
+}
+void updatebyReference(int &a){
+    a=500;
+}
+int main(){
+    int Original=100;
+    cout<< Original <<"\n";
+    
+    updatebyValue(Original);
+    cout<< Original<< "\n";
+    
+    updatebyReference(Original);
+    cout<< Original;
+}
+
