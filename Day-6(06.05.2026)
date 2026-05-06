@@ -60,3 +60,22 @@ int main(){
     cout<< Original;
 }
 
+//Practice problems
+//Total cost of coffee
+
+#include<iostream>
+using namespace std;
+
+int totalCost(int coffee){
+    int cost=50;
+    return coffee*cost;
+}
+
+int main(){
+    int coffee;
+    cin>> coffee;
+    
+    cout<<totalCost(coffee);
+    
+}
+
