@@ -79,3 +79,31 @@ int main(){
     
 }
 
+//pRACTICE PROBLEM 5--
+//Smart AC remote
+
+#include<iostream>
+using namespace std;
+
+void setTemprature(int temp=22){
+    cout<< "Temprature set to"<<temp <<"°C"<<"\n";
+}
+void setTemprature(double temp){
+    cout<< "Temprature set to"<<temp <<"°C"<<"\n";
+}
+void setTemprature(string mode){
+    if(mode=="ECO"){
+    cout<< "Temprature set to 24°C"<<"\n";
+}else if(mode=="TURBO"){
+    cout<<"Temprature set to 16°C"<<"\n";
+}
+}
+
+
+int main(){
+    setTemprature();//default temprature
+    setTemprature(20.5);//manually temprature
+    setTemprature("ECO");//ECO mode
+    setTemprature("TURBO");//TURBO mode
+}
+
