@@ -55,3 +55,32 @@ int main(){
     Parent p1;
     p1.Card();
 }
+
+//Constructors
+//Problem 2 --
+//2.1--Default Constructor
+//   --Parameterized
+//   -- Copy 
+
+#include<iostream>
+using namespace std;
+class wifiConnection{
+public:
+    string networkName;
+    int password;
+    
+    wifiConnection(){
+        networkName="ACT fibre";
+        password = 12345;
+    }
+
+public:
+void showConnection(){
+    cout<<"network Name is "<< networkName << " and password is:"<< password;
+}
+};
+int main(){
+    wifiConnection w1;
+    w1.showConnection();
+    
+}
