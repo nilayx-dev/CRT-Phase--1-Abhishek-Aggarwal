@@ -19,3 +19,39 @@ int main(){
     BankAccount myaccount ;
     myaccount.showBalance();
 }
+
+//Problem 7 --7.3
+//protected
+
+#include<iostream>
+using namespace std;
+
+class Parent{
+    protected:
+    int secretCode=1234;
+    
+    private:
+    int atmPin =9763;
+    
+    public:
+    void Card(){
+        cout<<"Atm card pin is:"<<atmPin;
+    }
+    
+};
+class child:public Parent{
+    
+    
+    public:
+    void accessOfSecretCode(){
+    cout<<"Secret code of the locker is:"<< secretCode<<"\n";
+    }
+    
+};
+
+int main(){
+    child c1;
+    c1.accessOfSecretCode();
+    Parent p1;
+    p1.Card();
+}
