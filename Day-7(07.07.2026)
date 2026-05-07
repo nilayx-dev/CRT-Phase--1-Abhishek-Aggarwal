@@ -141,3 +141,14 @@ int main() {
     ba1.setbalance(5000);
     cout<<ba1.getbalance();
 }
+
+
+
+//Problem 4--
+//Abstraction
+//It means hiding the implementation and showing onlt the necessary/essential
+//features to the users
+//abstract class--class cannot be initialized and it is formed using the abstract keyword
+//abstract method--there is no initialization of the abstract method--there
+
+
