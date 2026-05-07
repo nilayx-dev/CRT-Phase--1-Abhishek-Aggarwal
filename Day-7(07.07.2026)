@@ -84,3 +84,25 @@ int main(){
     w1.showConnection();
     
 }
+
+//2.2 --Parameterized
+
+class Student{
+  public:
+  string name;
+  int id;
+  
+  //Constructor
+  Student (string studentName, int studentID){
+      name=studentName;
+      id=studentID;
+  }
+  //public:
+  void Display(){
+      cout<<name << id;
+  }
+};
+int main(){
+    Student s1("Nilay",98745);
+    s1.Display();
+}
