@@ -96,3 +96,27 @@ int main(){
     obj1.Parent1::giveMeMoney();
     obj1.Parent2::giveMeMoney();
 }
+
+//Problem 2-- Inheritance
+//Hybrid Inheritance
+class A{
+    public:
+    void Print(){
+        cout<<"BJP wons";
+    }
+};
+class B: virtual public A{
+    
+    
+};
+class C:virtual public A{
+    
+};
+class D:public B ,public C{
+    
+};
+
+int main(){
+    D obj1;
+    obj1.Print();
+}
