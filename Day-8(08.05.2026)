@@ -1,0 +1,19 @@
+//Problem 1-- Inheritance
+//Single Inheritance
+class Vehicle{
+  public:
+  void Start(){
+      cout<< "vehicle starts"<<"\n";
+  }
+};
+class car:public Vehicle{
+    public:
+    void drive(){
+        cout<<"car is running";
+    }
+};
+int main(){
+    car obj1;
+    obj1.drive();
+    obj1.Start();
+}
