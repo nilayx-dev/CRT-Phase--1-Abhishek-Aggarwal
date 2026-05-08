@@ -120,3 +120,23 @@ int main(){
     D obj1;
     obj1.Print();
 }
+
+//Function overriding
+
+class Parent {
+public:
+	virtual void sum(int a,int b) {
+		cout<<a+b<<"Parent";
+	}
+};
+class child : public Parent {
+public:
+	void sum(int a,int b) override {
+		cout<< a + b <<"child";
+	}
+};
+int main() {
+	child c;
+	c.sum(10,20);
+}
+
