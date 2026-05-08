@@ -44,3 +44,33 @@ int main(){
     obj1.drive();
     obj1.Start();
 }
+
+
+//Problem 2-- Inheritance
+//Hierarchial Inheritance
+class Vehicle{
+  public:
+  void Start(){
+      cout<< "vehicle starts"<<"\n";
+  }
+};
+class car:public Vehicle{
+    public:
+    void drive(){
+        cout<<"car is running";
+    }
+};
+class Bike:public Vehicle{
+    public:
+    void speed(){
+        cout<<"car is running at 60km/hr";
+    }
+};
+int main(){
+    Bike obj1;
+    obj1.Start();
+    obj1.speed();
+    
+    car obj2;
+    obj2.drive();
+}
