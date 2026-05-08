@@ -74,3 +74,25 @@ int main(){
     car obj2;
     obj2.drive();
 }
+
+//Problem 2-- Inheritance
+//Multiple Inheritance
+class Parent1{
+  public:
+  void giveMeMoney(){
+      cout<< "Mummy paisa do mujhe"<<"\n";
+  }
+};
+class Parent2{
+    public:
+    void giveMeMoney(){
+        cout<<"papa paisa do mujhe";
+    }
+};
+class Child:public Parent1,public Parent2{
+};
+int main(){
+    Child obj1;
+    obj1.Parent1::giveMeMoney();
+    obj1.Parent2::giveMeMoney();
+}
