@@ -17,3 +17,30 @@ int main(){
     obj1.drive();
     obj1.Start();
 }
+
+//Problem 2-- Inheritance
+//Multilevel Inheritance
+class Vehicle{
+  public:
+  void Start(){
+      cout<< "vehicle starts"<<"\n";
+  }
+};
+class car:public Vehicle{
+    public:
+    void drive(){
+        cout<<"car is running";
+    }
+};
+class speedometer:public car{
+    public:
+    void speed(){
+        cout<<"car is running at 60km/hr";
+    }
+};
+int main(){
+    speedometer obj1;
+    obj1.speed();
+    obj1.drive();
+    obj1.Start();
+}
