@@ -69,3 +69,19 @@ public:
       }
       return 0;
   }
+
+
+//Leet code 796
+//Rotate string
+
+class Solution {
+public:
+    bool rotateString(string s, string goal) {
+        if(s.size()!= goal.size()){
+            return false;
+        }
+        string doublestring=s+s;
+        return doublestring.contains(goal);
+    }
+};
+;
