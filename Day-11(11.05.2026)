@@ -1,1 +1,40 @@
+//Leet code 189
+//Rotate array
 
+class Solution {
+public:
+    void rotateArray(vector<int>& nums,int start,int end){
+        while(start<end){
+            swap(nums[start],nums[end]);
+            start++;
+            end--;
+        }
+    }
+    void rotate(vector<int>& nums, int k) {
+        int n=nums.size();
+        k%=n;
+        rotateArray(nums,0,n-1);
+        rotateArray(nums,0,k-1);
+        rotateArray(nums,k,n-1);
+    }
+};
+
+//leet code 344
+//Reverse string
+
+class Solution {
+public:
+    void reverseString(vector<char>& s) {
+        int n=s.size();
+        int i=0;
+        int j=n-1;
+        while(i<j){
+            char temp=s[i];
+            s[i]=s[j];
+            s[j]=temp;
+
+            i++;
+            j--;
+        }
+    }
+};
