@@ -1,0 +1,17 @@
+//Problem 1 --
+//Print numbers 1 to 10 using recursion
+
+#include<iostream>
+using namespace std;
+void printNumber(int n){
+    if(n>10){
+        return ;
+    }
+        cout<<n<<" ";
+
+    printNumber(n+1);
+}
+
+int main(){
+    printNumber(1);
+}
