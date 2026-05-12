@@ -15,3 +15,23 @@ void printNumber(int n){
 int main(){
     printNumber(1);
 }
+
+//Problem 2--
+//To find factorial of a numbers
+
+#include<iostream>
+using namespace std;
+
+int factorial(int n){
+    int fact;
+    if(n==0 || n==1){
+        return 1;
+    }
+    fact=n*factorial(n-1);
+    return fact;
+}
+
+int main(){
+    cout<<factorial(5);
+    return 0;
+}
