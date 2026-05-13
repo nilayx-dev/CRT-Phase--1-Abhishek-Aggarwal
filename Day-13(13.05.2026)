@@ -1,0 +1,25 @@
+//Problem 1--
+//Binary string without consequtive ones
+
+#include<iostream>
+using namespace std;
+
+int consecutiveOnes(int n){
+    //Base condition
+    if(n==1){
+        return 2;
+    }
+    if(n==2){
+        return 3;
+    }
+    if(n==3){
+        return 5;
+    }
+    //logic
+     return consecutiveOnes(n-1)+consecutiveOnes(n-2);
+}
+
+int main(){
+    cout<< consecutiveOnes(4);
+    return 0;
+}
