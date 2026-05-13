@@ -41,3 +41,21 @@ int main(){
     cout<<tilingProblem(5);
     return 0;
 }
+
+class Solution {
+public:
+int robForm(vector<int>& nums,int index){
+    //base condition
+if(index>=nums.size()){
+    return 0;
+}
+    //logic
+    int include=nums[index]+robForm(nums,index+2);
+    int exclude=robForm(nums,index+1);
+
+    return max(include,exclude);
+}
+    int rob(vector<int>& nums) {
+        return robForm(nums,0);
+    }
+};
